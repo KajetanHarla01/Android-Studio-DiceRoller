@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DiceRoller</string>
+    <string name="roll">Roll!</string>
+    <string name="confirm">Confirm</string>
+    <string name="numer_of_dice">Numer of dice</string>
+    <string name="allow_dice_hold">Allow dice hold</string>
+    <string name="start">START</string>
+    <string name="rolled_msg">Rolled:</string>
+    <string name="click_start">Click start</string>
+    <string name="player_d">player %d</string>
+    <string name="settings_menu_label">Settings</string>
+    <string-array name="num_dice_spinner_entries">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

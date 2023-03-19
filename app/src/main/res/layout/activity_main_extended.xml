@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityExtended">
+
+    <Button
+        android:id="@+id/rollButtonExt"
+        android:layout_width="300dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollResultTextExt" />
+
+    <TextView
+        android:id="@+id/rollResultTextExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/click_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dice3ImgExt" />
+
+    <TextView
+        android:id="@+id/playerLabel"
+        android:layout_width="232dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/player_d"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dice1ImgExt"
+        android:layout_width="72dp"
+        android:layout_height="306dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:tintMode="multiply"
+        app:layout_constraintEnd_toStartOf="@+id/dice2ImgExt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerLabel"
+        app:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/dice2ImgExt"
+        android:layout_width="72dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="20dp"
+        android:tintMode="multiply"
+        app:layout_constraintEnd_toStartOf="@+id/dice3ImgExt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice1ImgExt"
+        app:layout_constraintTop_toBottomOf="@+id/playerLabel"
+        app:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/dice3ImgExt"
+        android:layout_width="72dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="20dp"
+        android:tintMode="multiply"
+        app:layout_constraintEnd_toStartOf="@+id/dice4ImgExt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice2ImgExt"
+        app:layout_constraintTop_toBottomOf="@+id/playerLabel"
+        app:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/dice4ImgExt"
+        android:layout_width="72dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="20dp"
+        android:tintMode="multiply"
+        app:layout_constraintEnd_toStartOf="@+id/dice5ImgExt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice3ImgExt"
+        app:layout_constraintTop_toBottomOf="@+id/playerLabel"
+        app:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/dice5ImgExt"
+        android:layout_width="72dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:tintMode="multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dice4ImgExt"
+        app:layout_constraintTop_toBottomOf="@+id/playerLabel"
+        app:srcCompat="@drawable/dice_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
